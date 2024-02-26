@@ -1,6 +1,7 @@
-package com.slypro.coursework2.service;
+package com.skypro.coursework2.service;
 
-import com.slypro.coursework2.model.Question;
+import com.skypro.coursework2.model.Question;
+
 import java.util.Collection;
 
 public interface ExaminerService {

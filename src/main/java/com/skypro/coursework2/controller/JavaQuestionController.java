@@ -1,7 +1,7 @@
-package com.slypro.coursework2.controller;
+package com.skypro.coursework2.controller;
 
-import com.slypro.coursework2.model.Question;
-import com.slypro.coursework2.service.QuestionService;
+import com.skypro.coursework2.model.Question;
+import com.skypro.coursework2.service.QuestionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -29,7 +29,7 @@ public class JavaQuestionController {
         return service.remove(new Question(question, answer));
     }
 
-    @GetMapping("/getAll")
+    @GetMapping("/")
     public Collection<Question> getQuestions() {
         return service.getAll();
     }

@@ -1,4 +1,4 @@
-package com.slypro.coursework2.model;
+package com.skypro.coursework2.model;
 
 import java.util.Objects;
 

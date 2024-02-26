@@ -1,8 +1,8 @@
-package com.slypro.coursework2.service.impl;
+package com.skypro.coursework2.service.impl;
 
-import com.slypro.coursework2.exceptions.QuestionIsNotExistException;
-import com.slypro.coursework2.model.Question;
-import com.slypro.coursework2.service.QuestionService;
+import com.skypro.coursework2.exceptions.QuestionIsNotExistException;
+import com.skypro.coursework2.model.Question;
+import com.skypro.coursework2.service.QuestionService;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
