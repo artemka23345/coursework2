@@ -16,28 +16,29 @@ public class JavaQuestionServiceImplTest {
     @Test
     void shouldAddByParams() {
         Question result = out.add(QUESTION_1.getQuestion(), QUESTION_1.getAnswer());
-        assertEquals(QUESTION_1,result);
+        assertEquals(QUESTION_1, result);
     }
 
     @Test
     void shouldAddWithoutParams() {
         Question result = out.add(QUESTION_1);
-        assertEquals(QUESTION_1,result);
+        assertEquals(QUESTION_1, result);
     }
 
     @Test
     void shouldReturnQuestionForRemove() {
         Question result = out.remove(QUESTION_2);
-        assertEquals(QUESTION_2,result);
+        assertEquals(QUESTION_2, result);
     }
+
     @Test
     void shouldThrowQuestionNotFoundExceptionForRemoveMethod() {
         assertThrows(QuestionIsNotExistException.class,
-                () ->out.remove(QUESTION_1));
+                () -> out.remove(QUESTION_1));
     }
 
     @Test
     void shouldGetAll() {
-        assertEquals(QUESTIONS,out.getAll());
+        assertEquals(QUESTIONS, out.getAll());
     }
 }

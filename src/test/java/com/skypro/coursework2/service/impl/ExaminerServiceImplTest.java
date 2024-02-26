@@ -27,13 +27,13 @@ public class ExaminerServiceImplTest {
     public void create() {
         when(javaQuestionService.getAll()).thenReturn(QUESTIONS);
         when(javaQuestionService.getRandomQuestion()).thenReturn(QUESTION_2);
-        out = new ExaminerServiceImpl (javaQuestionService);
+        out = new ExaminerServiceImpl(javaQuestionService);
     }
 
     @Test
     void shouldGetAllQuestions() {
         Set<Question> expected = Set.of(QUESTION_2);
-        Set <Question> result = (Set<Question>) out.getQuestions(1);
-        assertIterableEquals(expected,result);
+        Set<Question> result = (Set<Question>) out.getQuestions(1);
+        assertIterableEquals(expected, result);
     }
 }
