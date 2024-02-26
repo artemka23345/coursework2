@@ -14,19 +14,19 @@ public class JavaQuestionServiceImplTest {
 
 
     @Test
-    void shouldAddByParamsCorrectly() {
+    void shouldAddByParams() {
         Question result = out.add(QUESTION_1.getQuestion(), QUESTION_1.getAnswer());
         assertEquals(QUESTION_1,result);
     }
 
     @Test
-    void shouldAddWithoutParamsCorrectly() {
+    void shouldAddWithoutParams() {
         Question result = out.add(QUESTION_1);
         assertEquals(QUESTION_1,result);
     }
 
     @Test
-    void shouldReturnQuestionForRemoveCorrectly() {
+    void shouldReturnQuestionForRemove() {
         Question result = out.remove(QUESTION_2);
         assertEquals(QUESTION_2,result);
     }
@@ -37,7 +37,7 @@ public class JavaQuestionServiceImplTest {
     }
 
     @Test
-    void shouldGetAllCorrectly() {
+    void shouldGetAll() {
         assertEquals(QUESTIONS,out.getAll());
     }
 }
