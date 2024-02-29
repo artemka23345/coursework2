@@ -1,4 +1,4 @@
-package com.slypro.coursework2;
+package com.skypro.coursework2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
