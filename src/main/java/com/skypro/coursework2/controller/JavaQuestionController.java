@@ -29,7 +29,7 @@ public class JavaQuestionController {
         return service.remove(new Question(question, answer));
     }
 
-    @GetMapping("/")
+    @GetMapping("/find")
     public Collection<Question> getQuestions() {
         return service.getAll();
     }
